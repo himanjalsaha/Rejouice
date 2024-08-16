@@ -73,11 +73,11 @@ page1Content.addEventListener("mouseenter",function(dets){
                     opacity: 1, 
                     y: 0, 
                     scale: 1, 
-                    duration: 0.2, 
+                    duration: 0.1, 
                     ease: "power6.out",
                     scrollTrigger: {
                         trigger: "#page2-content",
-                        start: "top 80%", // Start the animation when #page2-content is in view
+                        start: "top 100%", // Start the animation when #page2-content is in view
                         onEnter: () => {
                             gsap.fromTo("#page2-content p", 
                                 { opacity: 0, y: 50, scale: 0 }, 
