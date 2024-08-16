@@ -418,13 +418,13 @@ h1 {
 /* Small Devices (Mobile) */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         padding: 1vh 2vh;
     }
 
     nav h3, nav h4 {
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     #cursor {
@@ -433,7 +433,11 @@ h1 {
     }
 
     #page1-content h1 {
-        font-size: 30vw;
+        font-size: 20vw;
+        line-height: 35vw;
+    }
+    #page1-content h1 span{
+        font-size: 25vw;
         line-height: 35vw;
     }
 
@@ -442,11 +446,11 @@ h1 {
     }
 
     #page2-content p {
-        font-size: 2vw;
+        font-size: 20vw;
     }
 
     #page3-top h4 {
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     #page3-top h4 span {
@@ -497,28 +501,42 @@ h1 {
         line-height: 50vw;
     }
 
+    #page2-content  {
+        display: flex;
+        align-items: flex-start;
+    }
     #page2-content p {
-        font-size: 2vw;
+        font-size: 7vw;
     }
 
+    #page2-content1 p {
+        font-size: 7vw;
+    }
     #page3-top h4 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     #page3-top h4 span {
-        font-size: 2.5vw;
+        font-size: 1vw;
     }
 
     #page3-top h2 {
-        font-size: 10vw;
+        font-size: 1vw;
     }
-
+#page3-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
     #page3-elements .box {
-        width: 100%; /* Full width for small screens */
+   
+
+        width:33%; /* Full width for small screens */
     }
 
     #swipperdiv {
-        height: 45vh;
+        height: 12vh;
     }
 
     .swiper-slide img {
