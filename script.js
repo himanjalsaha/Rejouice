@@ -73,7 +73,7 @@ page1Content.addEventListener("mouseenter",function(dets){
                     opacity: 1, 
                     y: 0, 
                     scale: 1, 
-                    duration: 1.5, 
+                    duration: 0.2, 
                     ease: "power6.out",
                     scrollTrigger: {
                         trigger: "#page2-content",
@@ -84,12 +84,7 @@ page1Content.addEventListener("mouseenter",function(dets){
                                 { opacity: 1, y: 0, scale: 1, duration: 2.0, ease: "power4.out" }
                             );
                         },
-                        onLeave: () => {
-                            gsap.to("#page2-content p", 
-                                { opacity: 0, y: -50, scale: 0, duration: 0, ease: "power4.in" }
-                            );
-                        },
-                        toggleActions: "play none none reverse", // Play and reverse the animation
+                      
                     }
                 }
             );
