@@ -1,0 +1,428 @@
+/* Base Styles (for large screens/desktops) */
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: nb;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page2 {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-color: beige;
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content {
+    position: relative;
+    z-index: 10;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 3vh;
+}
+
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+nav h4 {
+    font-size: 1.4vw;
+}
+
+#cursor {
+    height: 7.5vh;
+    width: 7.5vh;
+    background-color: #ff5f38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    color: black;
+    transform: translate(-50%, -50%);
+}
+
+#cursor1 {
+    height: 7.5vh;
+    width: 7.5vh;
+    background-color: #ff5f38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    color: black;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    position: absolute;
+    top: 2vh;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+#page1-content h1 {
+    font-family: rejoy;
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+
+#page1-content h1 span {
+    font-family: rejoy;
+    display: inline-block;
+}
+
+#page2-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 3vh;
+    border-bottom: 1px solid #000;
+}
+
+#page2-nav h4 {
+    font-family: nb;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+#page2-content {
+    padding: 10vh 15vh;
+    overflow: hidden;
+}
+
+#page2-content p {
+    font-family: nb;
+    font-size: 3vw;
+    line-height: 1.5;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+    background-color: beige;
+}
+
+#page3-top {
+    text-align: center;
+}
+
+#page3-top h4 {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#page3-top h4 span {
+    font-size: 0.7vw;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+#page3-top h2 {
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+#page3-elements{
+    height: 70vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5;
+    margin-top: -8px;
+
+}
+
+#page3-elements .box{
+ margin-top: 40;
+    height: 100%;
+    width: 33%;
+    background-color: black;
+    position: relative;
+}
+
+#page3-elements .box video{
+ object-fit: cover;
+ height: 100%;
+ width: 100%;
+ object-position: center;
+}
+
+
+#page3-elements .box img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    position: absolute;
+    transition: all ease 1s;
+   }
+   #page3-elements .box:hover img{
+  opacity: 0;
+
+   }
+
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    nav h3, nav h4 {
+        font-size: 3vw;
+    }
+
+    #cursor {
+        height: 6vh;
+        width: 6vh;
+        padding: 5;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #page1-content h1 {
+        font-size: 24vw;
+        line-height: 35vw;
+    }
+
+    #page2-content p {
+        font-size: 3vw;
+    }
+
+    #page3-top h4 {
+        font-size: 3vw;
+    }
+
+    #page3-top h4 span {
+        font-size: 1vw;
+    }
+
+    #page3-top h2 {
+        font-size: 6vw;
+    }
+}
+
+#page4{
+    background-color: beige;
+    display: flex;
+  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4 video{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+#page4-content {
+    position: relative;
+}
+
+#page4-content svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%); /* Center the SVG */
+    pointer-events: none;
+}
+
+#page4-content span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10%;
+    height: 10%;
+    color: beige;
+    font-weight: 400;
+    font-size:large;
+    
+    transform: translate(-50%, -50%); /* Center the SVG */
+    pointer-events: none;
+}
+
+#swipperdiv{
+    height: 60vh;
+    width: 100%;
+    background-color: beige;
+    margin-top: -5%;
+      
+}
+
+.swiper {
+    width: 130%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+
+    width:100%  !important;
+    text-align: center;
+    font-size: 19px;
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+
+    display: block;
+    width: 18%;
+   
+    object-fit: cover;
+  }
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: #000;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+#loader h3{
+    font-size: 3vw;
+}
+
+
+
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1vh 2vh;
+    }
+
+    nav h3, nav h4 {
+        font-size: 3vw;
+    }
+
+    #cursor {
+        height: 5vh;
+        width: 5vh;
+        padding: 5;
+    }
+
+    #page1-content h1 {
+        font-size: 20vw;
+        line-height: 50vw;
+    }
+
+    #page2-content {
+        padding: 5vh 10vh;
+    }
+
+    #page2-content p {
+        font-size: 5vw;
+    }
+
+    #page3-top h4 {
+        font-size: 3vw;
+    }
+
+    #page3-top h4 span {
+        font-size: 1.5vw;
+    }
+
+    #page3-top h2 {
+        font-size: 8vw;
+    }
+}
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 480px) {
+    nav h3, nav h4 {
+        font-size: 4vw;
+    }
+
+    #cursor {
+        height: 4vh;
+        width: 4vh;
+    }
+
+    #page1-content h1 {
+        font-size: 65vw;
+        line-height: 65vw;
+    }
+
+    #page2-content p {
+        font-size: 6vw;
+    }
+
+    #page3-top h4 {
+        font-size: 4vw;
+    }
+
+    #page3-top h4 span {
+        font-size: 2vw;
+    }
+
+    #page3-top h2 {
+        font-size: 10vw;
+    }
+}
